@@ -1035,4 +1035,11 @@ a:focus {
 .footer_section p a {
   color: inherit;
 }
+
+/* To size youtube videos properly */
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
