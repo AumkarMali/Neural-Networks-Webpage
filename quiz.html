@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>About Neural Networks</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+
+      body {
+          font-family: Arial, sans-serif;
+      }
+
+      h1 {
+          text-align: center;
+      }
+
+      .button {
+          background-color: darkblue;
+          border: none;
+          color: black;
+          text-align: center;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          padding: 20px 50px;
+          font-weight: bold;
+          transition: 0.3s;
+          flex: 1 0 30%; /* this line makes sure that there are three buttons per row */
+      }
+
+      .button:hover {
+          background-color: lightgray;
+          color: black;
+      }
+
+      .container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+    
+    </style>
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>NEURAL NETWORKS</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="deepDive.html">Deep Dive</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="Application.html">Application</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quiz.html">Quiz</a>
+              </li>
+            </ul>
+            <div class="quote_btn-container">
+              <form class="form-inline">
+                <button class="btn   nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+              
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h1>Neural Network Quiz</h1>
+
+                  <form id="quiz" onsubmit="return scoreQuiz(event)">
+                    <div id="question1">
+                      <h2>1. What are the two main phases in the neural network cycle?</h2>
+                      <input type="radio" name="answer1" value="a" /> A. Training and Prediction<br/>
+                      <input type="radio" name="answer1" value="b" /> B. Coding and Debugging<br/>
+                      <input type="radio" name="answer1" value="c" /> C. Designing and Implementing<br/>
+                      <input type="radio" name="answer1" value="d" /> D. Tuning and Evaluation<br/>
+                    </div>
+                    <div id="question2">
+                      <h2>2. What do weights and biases do in a neural network?</h2>
+                      <input type="radio" name="answer2" value="a" /> A. Define the behavior of the model<br/>
+                      <input type="radio" name="answer2" value="b" /> B. Create the visual interface<br/>
+                      <input type="radio" name="answer2" value="c" /> C. Calculate the cost of training<br/>
+                      <input type="radio" name="answer2" value="d" /> D. Store the dataset<br/>
+                    </div>
+                    <div id="question3">
+                      <h2>3. What type of neural network is best suited for recognizing images?</h2>
+                      <input type="radio" name="answer3" value="a" /> A. Recurrent Neural Network<br/>
+                      <input type="radio" name="answer3" value="b" /> B. Convolutional Neural Network<br/>
+                      <input type="radio" name="answer3" value="c" /> C. Feedforward Neural Network<br/>
+                      <input type="radio" name="answer3" value="d" /> D. Radial Basis Function Network<br/>
+                    </div>
+                    <div id="question4">
+                      <h2>4. What activation function is typically used in the output layer for classification problems?</h2>
+                      <input type="radio" name="answer4" value="a" /> A. ReLU<br/>
+                      <input type="radio" name="answer4" value="b" /> B. Tanh<br/>
+                      <input type="radio" name="answer4" value="c" /> C. Sigmoid<br/>
+                      <input type="radio" name="answer4" value="d" /> D. Linear<br/>
+                    </div>
+                    <div id="question5">
+                      <h2>5. What is backpropagation?</h2>
+                      <input type="radio" name="answer5" value="a" /> A. A method to calculate the output of a neural network<br/>
+                      <input type="radio" name="answer5" value="b" /> B. A method to calculate the error gradient of a neural network<br/>
+                      <input type="radio" name="answer5" value="c" /> C. A method to store the dataset for a neural network<br/>
+                      <input type="radio" name="answer5" value="d" /> D. A method to visualize a neural network<br/>
+                    </div>
+                    <div id="question6">
+                      <h2>6. What is the main difference between a feedforward neural network and a recurrent neural network?</h2>
+                      <input type="radio" name="answer6" value="a" /> A. Recurrent neural networks have cycles<br/>
+                      <input type="radio" name="answer6" value="b" /> B. Feedforward neural networks have cycles<br/>
+                      <input type="radio" name="answer6" value="c" /> C. Feedforward neural networks can process sequences<br/>
+                      <input type="radio" name="answer6" value="d" /> D. Recurrent neural networks can't process sequences<br/>
+                    </div>
+                    <div id="question7">
+                      <h2>7. What is the purpose of an activation function in a neural network?</h2>
+                      <input type="radio" name="answer7" value="a" /> A. To determine the output of a neuron<br/>
+                      <input type="radio" name="answer7" value="b" /> B. To store the weights and biases<br/>
+                      <input type="radio" name="answer7" value="c" /> C. To calculate the error gradient<br/>
+                      <input type="radio" name="answer7" value="d" /> D. To visualize the neural network<br/>
+                    </div>
+                    <div id="question8">
+                      <h2>8. What is a hidden layer in a neural network?</h2>
+                      <input type="radio" name="answer8" value="a" /> A. A layer that can't be trained<br/>
+                      <input type="radio" name="answer8" value="b" /> B. A layer that isn't connected to the input or output<br/>
+                      <input type="radio" name="answer8" value="c" /> C. A layer that is between the input and output layers<br/>
+                      <input type="radio" name="answer8" value="d" /> D. A layer that doesn't use an activation function<br/>
+                    </div>
+                    <div id="question9">
+                      <h2>9. What is the role of the loss function in a neural network?</h2>
+                      <input type="radio" name="answer9" value="a" /> A. To calculate the output of the network<br/>
+                      <input type="radio" name="answer9" value="b" /> B. To determine the weights and biases<br/>
+                      <input type="radio" name="answer9" value="c" /> C. To measure the performance of the network<br/>
+                      <input type="radio" name="answer9" value="d" /> D. To visualize the network<br/>
+                    </div>
+                    <div id="question10">
+                      <h2>10. What is overfitting in the context of neural networks?</h2>
+                      <input type="radio" name="answer10" value="a" /> A. When the model performs well on unseen data<br/>
+                      <input type="radio" name="answer10" value="b" /> B. When the model performs poorly on both training and testing data<br/>
+                      <input type="radio" name="answer10" value="c" /> C. When the model performs well on the training data but poorly on unseen data<br/>
+                      <input type="radio" name="answer10" value="d" /> D. When the model's performance doesn't improve with more training<br/>
+                    </div>
+
+                    <input type="submit" value="Submit Quiz" />
+                  </form>
+
+                  <div id="results"></div>
+
+                  <script>
+                  function scoreQuiz(event) {
+                    event.preventDefault();
+                    
+                    let score = 0;
+                    let numQuestions = 10;
+                    
+                    // Correct answers
+                    const answers = ["a", "a", "b", "c", "b", "a", "a", "c", "c", "c"];
+                    
+                    // Check each answer
+                    for (let i = 0; i < numQuestions; i++) {
+                      const userAnswer = document.forms["quiz"]["answer" + (i+1)].value;
+                      if (userAnswer === answers[i]) { score++; }
+                    }
+                    
+                    // Calculate score
+                    const percent = Math.round(score / numQuestions * 100);
+                    document.getElementById('results').innerHTML = `You scored ${score} out of ${numQuestions} (${percent}%)`;
+                    
+                    return false; // to prevent page from refreshing
+                  }
+                  </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              The Nueral Networks are a true testiment to not onlt the capabilites of modern computation, but also the human mind.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-0">
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info section -->
+
+
+
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>

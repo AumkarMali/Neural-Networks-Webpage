@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Nueral Networds</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    .flowchart {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .circle {
+        border: 3px solid #010736;
+        border-radius: 50%;
+        width: 150px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+    }
+    .line {
+        border-top: 1px solid #000;
+        flex-grow: 1;
+        margin: 0 10px;
+    }
+    .arrow {
+            width: 10; 
+            height: 0; 
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 15px solid black;
+            margin: 0 10px;
+        }
+</style>
+  
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>Nueral Networks</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="deepDive.html">Deep Dive</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="Application.html">Application</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quiz.html">Quiz</a>
+              </li>
+            </ul>
+            <div class="quote_btn-container">
+              <form class="form-inline">
+                <button class="btn   nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+              
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      The Fascinating world of <br>
+                      <span style="font-size: calc(1em + 10px);">Neural Networks</span>
+                  </h1>
+                  
+                    <p>
+                      Get started on your journey into neural networks, the building blocks of artificial intelligence. Explore resources designed for beginners and experts alike. </p>
+                    <div class="btn-box">
+                      <a href="#services" class="btn-1">
+                        Read More
+                      </a>
+                      <button class="btn-2" onclick="alert('Aumkar Mali and Jerry Zeng')">
+                        Creators
+                    </button>
+                    
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class=" col-lg-10 mx-auto">
+                      <div class="img-box">
+                        <img src="images/network.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+ 
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#services" role="button" data-slide="prev">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#services" role="button" data-slide="next">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding" id="services">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Introduction to Nueral Networks <br><br>
+        </h2>
+        <div class="flowchart">
+          <div class="flowchart">
+            <div class="circle" style="background-color: rgb(50, 50, 168);">What are Neural Networks?</div>
+            <div class="arrow" ></div>
+            <div class="circle" style="background-color: rgb(96, 96, 255);">How do Neural Networks Work?</div>
+            <div class="arrow"></div>
+            <div class="circle" style="background-color: rgb(156, 156, 238);">Types of Neural Networks</div>
+            <div class="arrow"></div>
+            <div class="circle" style="background-color: rgb(186, 186, 240);">Applications of Neural Networks</div>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container" id="introduction">
+              <h2>
+                What are Neural Networks?
+              </h2>
+  
+            </div>
+            <p> 
+              Neural networks, alternatively known as simulated neural networks (SNNs) or artificial neural networks (ANNs) are a type of machine learning that takes inspiration from how our brain's neurons interact to enable us to learn and process information. These networks form the basis upon which deep learning algorithms are built.
+              <br>
+              There are three common types of neural networks: feedforward neural networks, convolutional neural networks (CNNs) and recurrent neural networks (RNNs). Each have its own specific benefits and optimal use cases. To begin, feedforward neural network are often used as the base for natural language processing, computer vision and even other neural networks. It can be abstracted into three different layers, consisting of the input, the hidden layer(s) and the final output. How these layers faciliate the "learning" for a <!-- TODO: Add a link to the below anchor tag leading to the deep dive section --> feedforward neural network is explored in depth <a href="about.html">here</a>. Next, a convolutional neural network adds on to the feedforward one by borrowing concepts, i.e. the multiplication of matrices, from linear algebra. It is used in pattern and image recognition, as well as computer vision. Lastly, recurrent neural networks are trained through feedback loops. These are popular when making predictions based on past data over a time period, like for stocks.
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/network2.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- server section -->
+
+  <section class="server_section">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <!-- Youtube Video -->
+            <iframe class="youtube-video" src="https://www.youtube-nocookie.com/embed/bfmFfD2RIcg" title="Neural Network In 5 Minutes | What Is A Neural Network? | How Neural Networks Work | Simplilearn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container" id="Application">
+              <h2>
+                Neural Networks in 5 Minutes
+              </h2>
+              <p>
+                Simplilearn teaches you the fundamentals of neural networks and how they operate in a short, easy-to-digest video. It focuses on the feedforward system that was aforementioned.
+              </p>
+            </div>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end server section -->
+
+  <!-- price section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              The Nueral Networks are a true testiment to not onlt the capabilites of modern computation, but also the human mind.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-0">
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
